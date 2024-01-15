@@ -17,8 +17,8 @@ const App: React.FC = () => {
           component={LoginScreen}
           options={{headerShown:false}} 
         />
-        <Stack.Screen name="Signup" component={SignupScreen} />
-        <Stack.Screen name="Dashboard" component={DashboardScreen} />
+        <Stack.Screen options={{headerShown:false}}  name="Signup" component={SignupScreen} />
+        <Stack.Screen  options={{headerShown:false}} name="Dashboard" component={DashboardScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
